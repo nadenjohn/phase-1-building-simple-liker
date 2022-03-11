@@ -12,7 +12,7 @@ const FULL_HEART = '♥'
 //------------------------------------------------------------------------------
 
 function mimicServerCall(url="http://mimicServer.example.com", config={}) {
-  return new Promise(function(resolve, reject) {
+return new Promise(function(resolve, reject) {
     setTimeout(function() {
       let isRandomFailure = Math.random() < .2
       if (isRandomFailure) {
@@ -23,3 +23,22 @@ function mimicServerCall(url="http://mimicServer.example.com", config={}) {
     }, 300);
   });
 }
+
+const error = document.getElementById("modal")
+error.className = "hidden"
+
+// const likeButton = document.querySelector(".like-glyph")
+// likeButton.addEventListener("click", function(){
+//   mimicServerCall()
+//   .then((result)=> 
+//    updateHeart(result))
+  
+  
+  
+//   .catch((result)=>
+//    if (result === reject)
+// })
+
+// function updateHeart (response){
+//   if (response === )
+// }
